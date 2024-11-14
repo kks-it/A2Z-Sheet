@@ -1,6 +1,6 @@
 package Arrays.Medium;
 
-public class A11_RotateMatrixBy90Degreee {
+public class B2_RotateMatrixBy90Degreee {
     public static void main(String[] args) {
         Solution_A11 sol = new Solution_A11();
 

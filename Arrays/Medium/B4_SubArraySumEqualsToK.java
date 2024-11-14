@@ -3,7 +3,7 @@ package Arrays.Medium;
 import java.util.HashMap;
 import java.util.Map;
 
-public class A13_SubArraySumEqualsToK {
+public class B4_SubArraySumEqualsToK {
     public static void main(String... args){
         Solution_A13 sol = new Solution_A13();
 
@@ -23,8 +23,8 @@ class Solution_A13 {
 
         map.put(0, 1);
 
-        for(int i = 0; i < nums.length; i++){
-            prefixSum += nums[i];
+        for (int num : nums) {
+            prefixSum += num;
 
             int count = map.getOrDefault(prefixSum - k, 0);
             ans += count;

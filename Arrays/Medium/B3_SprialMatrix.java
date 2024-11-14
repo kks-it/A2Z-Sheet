@@ -3,7 +3,7 @@ package Arrays.Medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class A12_SprialMatrix {
+public class B3_SprialMatrix {
     public static void main(String[] args){
         int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
         Solution_A12 sol = new Solution_A12();

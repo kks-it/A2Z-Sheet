@@ -1,6 +1,8 @@
 package Arrays.Medium;
 
-public class A10_SetMatrixZeros {
+import java.util.Arrays;
+
+public class B1_SetMatrixZeros {
     public static void main(String[] args) {
         Solution_A10 sol = new Solution_A10();
 
@@ -20,8 +22,8 @@ public class A10_SetMatrixZeros {
 class Solution_A10 {
     public void setZeroes(int[][] matrix) {
         boolean row0 = false, col0 = false;
-        for(int i = 0; i < matrix.length; i++){
-            if(matrix[i][0] == 0){
+        for (int[] nums : matrix) {
+            if (nums[0] == 0) {
                 col0 = true;
                 break;
             }
@@ -59,9 +61,7 @@ class Solution_A10 {
         }
 
         if(row0){
-            for(int i = 0; i < matrix[0].length; i++){
-                matrix[0][i] = 0;
-            }
+            Arrays.fill(matrix[0], 0);
         }
     }
 }
