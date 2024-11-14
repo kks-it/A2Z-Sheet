@@ -1,8 +1,8 @@
 package String.Basic;
 
-public class A2_LargestOddNumberInString {
+public class A3_LargestOddNumberInString {
     public static void main(String[] args){
-        Solution_A2 sol = new Solution_A2();
+        Solution_A3 sol = new Solution_A3();
 
         String result = sol.largestOddNumber("3542786");
 
@@ -11,7 +11,7 @@ public class A2_LargestOddNumberInString {
 }
 
 
-class Solution_A2 {
+class Solution_A3 {
     public String largestOddNumber(String num) {
         int index = 0;
         for(int i = num.length() - 1; i >= 0;  i--){
