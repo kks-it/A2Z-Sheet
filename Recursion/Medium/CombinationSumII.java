@@ -4,6 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// Intution to ensure unique combinations:
+// Sort the array to get the combination in same order
+// combination can be started from any index
+// If we are taking the first occurence of a number, we can skip it's other occurence as it will give same combination
+// eg. {1, 1, 1, 2, 2} target = 4
+// with "empty" cur list, we will get same combination on consuming idx = 0, 1, 2. So we can skip idx = 1, 2
+// Similarly, with {1} in cur list, we will get same combination on comsuming idx = 1, 2. i.e, {1, 1}. So we can skip idx = 2.
+
 public class CombinationSumII {
     public static void main(String[] args) {
         Solution sol = new Solution();
